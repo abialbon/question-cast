@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Question Admin Panel</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <body>
+        <div class="container">
+                <div class="jumbotron">
+                  <h1 class="display-3">Question Panel</h1>
+                  <p class="lead">This is a simple admin panel for adding questions to the database</p>
+                </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 offset-md-3">
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <label for="stem">Question Stem</label>
+                            <input type="text" name="stem" id="stem" class="form-control"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="answer">Answer Choice</label>
+                            <input type="text" name="answer" id="answer" class="form-control"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="distractors">Distractors</label>
+                            <input type="text" name="distractors" id="distractors" class="form-control"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="system">System</label>
+                            <select class="form-control" name="system" id="system">
+                                  <option value="genPharm" >General Pharmacology</option>
+                                  <option value="ans" >Autonomic Nervous System</option>
+                                  <option value="cvs" >Cardiovascular System</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="topic">Topic</label>
+                            <select class="form-control" name="topic" id="topic">
+                                  <option value="distribution" >Distribution</option>
+                                  <option value="glaucoma" >Glaucoma</option>
+                                  <option value="bp" >BP</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Type</label>
+                            <select class="form-control" name="type" id="type">
+                                  <option value="moa" >Mech of action</option>
+                                  <option value="adr" >Adverse reactions</option>
+                                  <option value="use" >Use</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
